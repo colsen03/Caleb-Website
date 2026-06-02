@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interests — Caleb M. Olsen</title>
+  <style>
+    /* === ALL CSS EMBEDDED — no external stylesheet needed === */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Times New Roman', Times, Georgia, serif;
+      background-color: #f5f0e8;
+      color: #1a1a1a;
+      line-height: 1.7;
+    }
+
+    /* DIV 1: HEADER */
+    div#scratch-header {
+      background-color: #1a1a1a;
+      color: #ffffff;
+      text-align: center;
+      padding: 3rem 2rem 2rem;
+      border-bottom: 4px solid #8b6914;
+    }
+    div#scratch-header h1 {
+      font-size: 2.8rem;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.4rem;
+      color: #f5f0e8;
+      font-family: 'Times New Roman', Times, serif;
+    }
+    div#scratch-header p.tagline {
+      font-size: 1.1rem;
+      font-style: italic;
+      color: #ccbbaa;
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+    /* DIV 2: NAV */
+    div#scratch-nav {
+      background-color: #2c2c2c;
+      padding: 0.6rem 1.5rem;
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    div#scratch-nav a {
+      color: #f5f0e8;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 1rem;
+      text-decoration: none;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      border-bottom: 2px solid transparent;
+      padding-bottom: 2px;
+    }
+    div#scratch-nav a:hover {
+      border-bottom: 2px solid #c9a84c;
+      color: #c9a84c;
+    }
+
+    /* DIV 3: MAIN CONTENT */
+    div#scratch-content {
+      max-width: 860px;
+      margin: 3rem auto;
+      padding: 0 1.5rem;
+    }
+
+    h2.scratch-section {
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 1.7rem;
+      border-bottom: 2px solid #1a1a1a;
+      padding-bottom: 0.3rem;
+      margin-top: 2.5rem;
+      margin-bottom: 1rem;
+      color: #1a1a1a;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    p {
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 1.05rem;
+      color: #2a2a2a;
+      margin-bottom: 1rem;
+    }
+
+    ol.outer-list {
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 1rem;
+      color: #1a1a1a;
+      padding-left: 1.5rem;
+      line-height: 1.9;
+    }
+    ol.outer-list > li {
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+    }
+    ul.inner-list {
+      list-style-type: disc;
+      padding-left: 1.4rem;
+      margin-top: 0.3rem;
+      font-weight: normal;
+    }
+    ul.inner-list li {
+      font-weight: normal;
+      margin-bottom: 0.2rem;
+    }
+
+    img.scratch-img {
+      width: 100%;
+      max-width: 700px;
+      display: block;
+      margin: 1.5rem auto;
+      border: 3px solid #1a1a1a;
+      box-shadow: 4px 4px 0 #8b6914;
+    }
+    img.scratch-img-small {
+      width: 100%;
+      max-width: 400px;
+      display: block;
+      margin: 1rem auto;
+      border: 2px solid #555;
+    }
+
+    div.video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      max-width: 700px;
+      margin: 1.5rem auto;
+      border: 3px solid #1a1a1a;
+      box-shadow: 4px 4px 0 #8b6914;
+    }
+    div.video-container iframe {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+    }
+
+    div#tableau-section {
+      background-color: #ffffff;
+      border: 2px solid #1a1a1a;
+      padding: 1.5rem;
+      margin: 2rem 0;
+      box-shadow: 4px 4px 0 #8b6914;
+    }
+
+    a.anchor-link {
+      color: #7a4f1e;
+      text-decoration: underline;
+      font-family: 'Times New Roman', Times, serif;
+    }
+    a.anchor-link:hover { color: #c9a84c; }
+
+    a.app-btn {
+      display: inline-block;
+      background: #1a1a1a;
+      color: #f5f0e8;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 1rem;
+      padding: 0.65rem 1.6rem;
+      text-decoration: none;
+      letter-spacing: 0.06em;
+      border: 2px solid #1a1a1a;
+      margin-top: 0.5rem;
+    }
+    a.app-btn:hover { background: #c9a84c; color: #1a1a1a; border-color: #c9a84c; }
+
+    /* DIV 4: FOOTER */
+    div#scratch-footer {
+      background-color: #1a1a1a;
+      color: #ccbbaa;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 0.9rem;
+      text-align: center;
+      padding: 1.5rem 1rem;
+      margin-top: 4rem;
+    }
+    div#scratch-footer a { color: #c9a84c; text-decoration: none; }
+    div#scratch-footer a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+  <div id="scratch-header">
+    <h1>Caleb M. Olsen</h1>
+    <p class="tagline">Beyond the Balance Sheet — Passions, Pursuits &amp; Perspectives</p>
+  </div>
+
+  <div id="scratch-nav">
+    <a href="index.html">&#8592; Professional Site</a>
+    <a href="#running">Running</a>
+    <a href="#finance-passion">Finance</a>
+    <a href="#leadership">Leadership</a>
+    <a href="#viz">Data Viz</a>
+    <a href="app.html">Mini App</a>
+  </div>
+
+  <div id="scratch-content">
+
+    <span id="top"></span>
+
+    <h2 class="scratch-section" id="running">Marathon Running</h2>
+    <p>Few things reveal character like mile 20 of a marathon. I have completed two full marathons — the
+      <strong>Ogden Marathon</strong> (3:56:50) and the <strong>Big Cottonwood Heights Marathon</strong> (3:54:29) —
+      and the sport has shaped how I approach challenges in finance and life: disciplined preparation, pacing strategy,
+      and the mental fortitude to push through discomfort.</p>
+
+    <img class="scratch-img"
+      src="https://images.unsplash.com/photo-1517931524326-bdd55a541177?w=700&q=80"
+      alt="Marathon runners crossing a finish line" />
+
+    <p>Training for a marathon mirrors building a financial model — both require a plan, iteration, and the ability to
+      course-correct when projections don't match reality. I currently train 5 days a week and am targeting a sub-3:45
+      finish in my next race.</p>
+
+    <p><strong>A great video on marathon training strategy:</strong></p>
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/9ojMGaJhWmA"
+        title="Beginner Marathon Training Plan"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
+
+    <h2 class="scratch-section" id="finance-passion">Why I Love Finance</h2>
+    <p>Finance isn't just my major — it's how I think. Here are the key areas I'm most passionate about:</p>
+
+    <ol class="outer-list">
+      <li>Mergers &amp; Acquisitions
+        <ul class="inner-list">
+          <li>The thrill of identifying undervalued targets</li>
+          <li>Complex deal structuring and negotiation dynamics</li>
+          <li>Synthesizing diligence into a single investment decision</li>
+        </ul>
+      </li>
+      <li>Leveraged Buyouts (LBOs)
+        <ul class="inner-list">
+          <li>Building detailed financial models from scratch</li>
+          <li>Understanding how leverage amplifies both risk and return</li>
+          <li>Competed in two LBO case competitions at BYU in 2026</li>
+        </ul>
+      </li>
+      <li>Private Equity
+        <ul class="inner-list">
+          <li>Long-term value creation beyond a single quarter</li>
+          <li>Active member of BYU's PE/VC Association</li>
+        </ul>
+      </li>
+      <li>Entrepreneurship Through Acquisition (ETA)
+        <ul class="inner-list">
+          <li>Currently supporting ETA clients at Waystation Advisors</li>
+          <li>Identifying acquisition targets in the PT/Med Spa vertical</li>
+        </ul>
+      </li>
+    </ol>
+
+    <img class="scratch-img-small"
+      src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=500&q=80"
+      alt="Finance charts on a screen" />
+
+    <h2 class="scratch-section" id="leadership">Leadership &amp; Service</h2>
+    <p>Leadership is something I've taken seriously since earning my <strong>Eagle Scout</strong> — a project that
+      remediated the Fremont, California Adult School Campus. Later, I led a team of 31 volunteer representatives
+      for two years, sharpening my ability to inspire, delegate, and navigate diverse personalities.</p>
+    <p>Today I serve as <strong>Program Director at Y-Serve</strong> (BYU's student volunteer organization), leading
+      recruitment for the Cougar Coaches sector.</p>
+
+    <p>Curious about how I think about data?
+      <a class="anchor-link" href="#viz">Jump to the data visualization &#8595;</a>
+    </p>
+
+    <h2 class="scratch-section" id="viz">Data Visualization</h2>
+    <p>As a marathon runner myself, I love seeing race data come to life. Below is a live Tableau visualization of
+      2023 Boston Marathon finish times — showing the distribution of runner performances across the entire field.</p>
+
+    <div id="tableau-section">
+      <div class='tableauPlaceholder' id='viz1' style='position:relative; width:100%; min-height:500px;'>
+        <noscript>
+          <a href='https://public.tableau.com/app/profile/whitney6892/viz/bostonrunners/Dashboard1'>
+            <img alt='2023 Boston Marathon Dashboard' src='https://public.tableau.com/static/images/bo/bostonrunners/Dashboard1/1_rss.png' style='border:none' />
+          </a>
+        </noscript>
+        <object class='tableauViz' style='display:none; width:100%; min-height:500px;'>
+          <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+          <param name='embed_code_version' value='3' />
+          <param name='site_root' value='' />
+          <param name='name' value='bostonrunners/Dashboard1' />
+          <param name='tabs' value='no' />
+          <param name='toolbar' value='yes' />
+          <param name='animate_transition' value='yes' />
+          <param name='display_static_image' value='yes' />
+          <param name='display_spinner' value='yes' />
+          <param name='display_overlay' value='yes' />
+          <param name='display_count' value='yes' />
+          <param name='language' value='en-US' />
+        </object>
+      </div>
+      <script type='text/javascript'>
+        var divElement = document.getElementById('viz1');
+        var vizElement = divElement.getElementsByTagName('object')[0];
+        vizElement.style.width='100%';
+        vizElement.style.minHeight='500px';
+        var scriptElement = document.createElement('script');
+        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+      </script>
+      <p style="font-size:0.85rem; color:#555; margin-top:0.8rem; text-align:center;">
+        Interactive: 2023 Boston Marathon Runner Data | Source: Tableau Public
+      </p>
+    </div>
+
+    <h2 class="scratch-section">Mini Web App</h2>
+    <p>I collaborated with AI to build a finance quiz app — test your M&amp;A and finance knowledge!</p>
+    <a class="app-btn" href="app.html">Launch Finance Quiz App &#8594;</a>
+
+    <br /><br />
+    <p style="text-align:center; margin-top:2rem;">
+      <a class="anchor-link" href="#top">&#8593; Back to top</a>
+    </p>
+
+  </div>
+
+  <div id="scratch-footer">
+    <p>&copy; 2026 Caleb M. Olsen &nbsp;&middot;&nbsp;
+      <a href="index.html">Professional Site</a> &nbsp;&middot;&nbsp;
+      <a href="app.html">Finance Quiz App</a>
+    </p>
+  </div>
+
+</body>
+</html>
